@@ -1,0 +1,70 @@
+.MobNavbarMenu {
+    top: 80px;
+}
+
+.MenuNavbarMob {
+    top: 80px;
+    overflow-y: auto;
+    /* transform: translate3d(0px, 0px, 0px); */
+    /* visibility: visible; */
+    opacity: 1;
+
+    background-color: rgb(255, 255, 255);
+
+    position: fixed;
+    /* background-color: rgb(255, 255, 255); */
+    /* top: 64px; */
+    left: 0px;
+    right: 0px;
+    /* bottom: -70px; */
+    /* visibility: hidden; */
+    /* transform: translate3d(0px, -1%, 0px); */
+    /* opacity: 0; */
+    z-index: 20;
+    /* box-shadow: none; */
+    /* margin-bottom: 0px; */
+    /* padding-bottom: 70px; */
+    /* transition: box-shadow 250ms ease-out 250ms, 250ms ease-out; */
+
+    /* text-align: center; */
+    /* margin-bottom: 40px; */
+}
+
+.unstyleMenuNavbarMob {
+    display: block;
+
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    /* display: block; */
+    /* list-style-type: disc; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    /* Removed padding-inline-start: 40px to prevent horizontal overflow */
+    unicode-bidi: isolate;
+}
+
+.MenuNavbarMobList {
+
+    padding: 0px;
+
+    line-height: 16px;
+    font-size: 16px;
+
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    line-height: 13px;
+    font-size: 13px;
+    /* padding: 0px 30px 0px 20px; */
+
+    transition: font-size 130ms ease-in-out;
+
+    /* transition: font-size 130ms ease-in-out; */
+}

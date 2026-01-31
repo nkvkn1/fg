@@ -1,0 +1,67 @@
+.social_Media{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+.social_Media_unstyled{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    /* Removed padding-inline-start: 40px to prevent horizontal overflow */
+    unicode-bidi: isolate;
+   
+}
+
+.social_Media_Item{
+    display: inline-block;
+    margin: 0px 9px;
+    width: 16px;
+
+    transition: font-size ease-in-out 130ms;
+
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+   
+}
+
+.social_Media_Item_X_Media{
+    display: inline-block;
+    margin: 0px 9px;
+    width: 16px;
+
+    transition: font-size ease-in-out 130ms;
+
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    padding-bottom: 5px;
+}
+
+.social_Media_Item_Link{
+    color: #bbbbbb;
+    font-family: Benton Sans Book;
+    font-size: 12px;
+    font-weight: normal;
+    font-size: 16px;
+
+    outline: 0;
+    text-decoration: none;
+    
+}
+

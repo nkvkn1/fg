@@ -1,0 +1,12 @@
+.Footer {
+    line-height: 1.6;
+    color: rgb(85, 85, 85);
+    font-family: "Times New Roman", "Times Roman", serif;
+    /* font-size: 10px; */
+    /* font-weight: normal; */
+    text-align: center;
+    width: 100%;
+    padding: 60px 0px;
+   
+}
+

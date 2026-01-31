@@ -1,0 +1,51 @@
+.MainMenuNavbar {
+    position: relative;
+    z-index: 2;
+}
+
+/* .MainMenuNavbar {} */
+
+/* .Menu {
+    text-align: center;
+    margin-bottom: 40px;
+} */
+
+.Unstyled_Menu_List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    /* Removed padding-inline-start: 40px to prevent horizontal overflow */
+    unicode-bidi: isolate;
+}
+
+.Link_Item_Menu_Item{
+    padding: 0 30px 0 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    line-height: 13px;
+    font-size: 13px;
+
+    transition: font-size ease-in-out 130ms;
+
+    display: list-item;   
+    unicode-bidi: isolate;
+}
+
+.Item_Link{
+    color: #555555;
+    font-family: "Times New Roman", "Times Roman", serif;
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+}

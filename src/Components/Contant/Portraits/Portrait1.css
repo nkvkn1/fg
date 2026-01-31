@@ -1,0 +1,82 @@
+/* Portrait1.css */
+
+/* Container */
+.portraitContaner {
+    padding: 16px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+    box-sizing: border-box;
+}
+
+/* Gallery wrapper */
+.portraitContanerGallery {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+/* Grid layout */
+.portraitContanerGalleryGrid {
+    column-count: 3;
+    column-gap: 8px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Each card */
+.portraitContanerCard {
+    display: inline-block; /* Important for column layout */
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+/* Image link */
+.portraitContanerCardLink {
+    display: block;
+    position: relative;
+}
+
+/* Overlay effect */
+.OverLayerCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portraitContanerCardLink:hover .OverLayerCover {
+    opacity: 1;
+}
+
+/* Image holder */
+.ImgHolderCardCover {
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+}
+
+/* Image styling */
+.ImgLazyLoaded {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+    .portraitContanerGalleryGrid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .portraitContanerGalleryGrid {
+        column-count: 1;
+    }
+}

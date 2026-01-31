@@ -1,0 +1,298 @@
+
+:root {
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Montserrat', sans-serif;
+  --color-dark: #232323;
+  --color-light: #ffffff;
+  --color-gray-text: #5c5c5c;
+  --color-accent-orange: #d17a47; /* Inspired by the orange coat in the main image */
+  --color-background-light: #f8f8f8;
+  --color-background-dark: #333333; /* For sections like the footer in the reference */
+}
+
+body {
+  margin: 0;
+  font-family: var(--secondary-font);
+  color: var(--color-dark);
+  line-height: 1.6;
+  background-color: var(--color-background-light);
+}
+
+.about-page-container {
+  overflow: hidden; /* Ensures no horizontal scroll */
+}
+
+/* --- HERO SECTION --- */
+.about-hero-section {
+position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-light);
+
+  background-image: url('/images/AboutUsMainImage.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;              /* ✅ cinematic fill */
+  background-position: center 23%;     /* ✅ protects subject */
+  
+  box-shadow: inset 0 -50px 100px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.about-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Overlay for readability */
+}
+
+.about-hero-content {
+  position: relative; /* Brings content above the overlay */
+  z-index: 2;
+  max-width: 800px;
+}
+
+.about-hero-tagline {
+  font-family: var(--secondary-font);
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent-orange);
+  margin-bottom: 10px;
+}
+
+.about-hero-title {
+  font-family: var(--primary-font);
+  font-size: 3.5em;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero-description {
+  font-family: var(--secondary-font);
+  font-size: 1.2em;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- MAIN CONTENT SECTION --- */
+.about-main-content {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.about-intro-section {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start; /* Align items to the top */
+  margin-bottom: 80px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.about-intro-text {
+  flex: 2; /* Takes more space for text */
+  min-width: 300px; /* Ensures text doesn't get too narrow */
+}
+
+.intro-title, .philosophy-title {
+  font-family: var(--primary-font);
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.intro-title::after, .philosophy-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent-orange);
+}
+
+.intro-paragraph {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  color: var(--color-gray-text);
+  margin-bottom: 18px;
+}
+
+.about-profile-photo-container {
+  flex: 1; /* Takes less space for photo */
+  min-width: 250px; /* Ensures photo doesn't get too small */
+  text-align: center;
+  position: relative;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 350px; /* Max size for the photo */
+  height: auto;
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.photo-caption {
+  font-family: var(--secondary-font);
+  font-size: 0.9em;
+  color: var(--color-gray-text);
+  font-weight: 400;
+}
+
+.contact-action-button {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border: none;
+  padding: 15px 35px;
+  font-family: var(--secondary-font);
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 3px;
+  margin-top: 20px;
+  display: inline-block; /* Allows padding and width to work */
+}
+
+.contact-action-button:hover {
+  background-color: var(--color-accent-orange);
+  color: var(--color-light);
+}
+
+/* --- PHILOSOPHY SECTION --- */
+.about-philosophy-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.philosophy-title {
+  text-align: center;
+  margin-left: auto; /* Center the pseudo-element underline */
+  margin-right: auto;
+}
+
+.philosophy-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.philosophy-item {
+  background-color: var(--color-light);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-item h3 {
+  font-family: var(--primary-font);
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.philosophy-item p {
+  font-family: var(--secondary-font);
+  font-size: 0.95em;
+  color: var(--color-gray-text);
+}
+
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 900px) {
+  .about-hero-title {
+    font-size: 2.8em;
+  }
+  .about-main-content {
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    height: 400px;
+  }
+  .about-hero-title {
+    font-size: 2.2em;
+  }
+  .about-hero-description {
+    font-size: 1em;
+  }
+
+  .about-intro-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-intro-text, .about-profile-photo-container {
+    width: 100%;
+    max-width: 500px; /* Restrict width on smaller screens */
+  }
+
+  .profile-photo {
+    max-width: 100%;
+  }
+
+  .contact-action-button {
+    width: auto; /* Allow button to size naturally */
+    padding: 12px 30px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-section {
+    height: 350px;
+  }
+  .about-hero-title {
+    font-size: 1.8em;
+  }
+  .about-hero-tagline {
+    font-size: 0.8em;
+  }
+  .about-text-container {
+    padding: 30px 20px;
+  }
+  .intro-title, .philosophy-title {
+    font-size: 1.8em;
+  }
+}

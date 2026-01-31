@@ -1,0 +1,21 @@
+.LapHeader {
+  display: block;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.MobHeader {
+  display: none;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* When screen is 720px or smaller, show mobile, hide desktop */
+@media (max-width: 768px) {
+  .LapHeader {
+    display: none;
+  }
+
+  .MobHeader {
+    display: block;
+  }
+}
