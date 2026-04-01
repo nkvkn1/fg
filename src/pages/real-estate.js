@@ -1,13 +1,14 @@
-import Head from "next/head";
-import RealEstate from "@/Components/Contant/Realestate/Real_estate";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-export default function RealEstatePage() {
-  return (
-    <>
-      <Head>
-        <title>Real Estate | Fotogracia</title>
-      </Head>
-      <RealEstate />
-    </>
-  );
+export default function RealEstateRedirectPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/services?focus=real-estate");
+  }, [router]);
+
+  return null;
 }
+
+RealEstateRedirectPage.getLayout = (page) => page;

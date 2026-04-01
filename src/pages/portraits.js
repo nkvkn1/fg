@@ -1,13 +1,14 @@
-import Head from "next/head";
-import Portraits from "@/Components/Contant/Portraits/Portrait1";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-export default function PortraitsPage() {
-  return (
-    <>
-      <Head>
-        <title>Portraits | Fotogracia</title>
-      </Head>
-      <Portraits />
-    </>
-  );
+export default function PortraitsRedirectPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/services");
+  }, [router]);
+
+  return null;
 }
+
+PortraitsRedirectPage.getLayout = (page) => page;

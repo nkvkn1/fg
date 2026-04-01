@@ -1,21 +1,29 @@
-/**
- * This file must NOT render any UI.
- * It must ONLY redirect "/" to "/portraits".
- * Do not render Navbar or any page sections here.
- */
+import { Seo } from "@/components/seo/Seo";
+import { HeroSection } from "@/components/home/HeroSection";
+import { PortfolioPreview } from "@/components/home/PortfolioPreview";
+import { WhyChooseSection } from "@/components/home/WhyChooseSection";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { PricingPreview } from "@/components/home/PricingPreview";
+import { InstagramStrip } from "@/components/home/InstagramStrip";
+import { FinalCtaSection } from "@/components/home/FinalCtaSection";
+import { FaqSection } from "@/components/shared/FaqSection";
 
-import { useEffect } from "react";
-import { useRouter } from "next/router";
-
-export default function Home() {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.replace("/portraits");
-  }, [router]);
-
-  return null;
+export default function HomePage() {
+  return (
+    <>
+      <Seo
+        title="Premium Photography"
+        description="Fotogracia creates premium men's portraits, couples shoots, and real estate photography with an easy booking flow and a luxury-modern aesthetic."
+        path="/"
+      />
+      <HeroSection />
+      <PortfolioPreview />
+      <WhyChooseSection />
+      <TestimonialsSection />
+      <PricingPreview />
+      <InstagramStrip />
+      <FaqSection />
+      <FinalCtaSection />
+    </>
+  );
 }
-
-// Skip layout for redirect-only page
-Home.getLayout = (page) => page;

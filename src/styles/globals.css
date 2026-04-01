@@ -1,52 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-/* CRITICAL FIX: Prevent horizontal overflow using clip */
 html {
-  overflow-x: clip;
-  margin: 0;
-  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-  overflow-x: clip;
   margin: 0;
-  padding: 0;
-  width: 100%;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(223, 211, 195, 0.06), transparent 28%),
+    linear-gradient(180deg, #0d0d0d 0%, #080808 100%);
+  color: #ffffff;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#__next {
-  overflow-x: clip;
-  width: 100%;
-}
-
 * {
   box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-main {
-  overflow-x: clip;
-  width: 100%;
 }
 
 a {
@@ -54,8 +32,19 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(223, 211, 195, 0.25);
+  color: #ffffff;
 }

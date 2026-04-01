@@ -1,13 +1,15 @@
-import Head from "next/head";
-import BookNow from "@/Components/Contant/BookNow/BookNow";
+import { Seo } from "@/components/seo/Seo";
+import { BookingForm } from "@/components/forms/BookingForm";
 
 export default function BookNowPage() {
   return (
     <>
-      <Head>
-        <title>Book Now | Fotogracia</title>
-      </Head>
-      <BookNow />
+      <Seo
+        title="Book Now"
+        description="Book a Fotogracia shoot in minutes with a simple photography inquiry form for portraits, couples sessions, and real estate projects."
+        path="/book-now"
+      />
+      <BookingForm />
     </>
   );
 }

@@ -1,17 +1,14 @@
-import Head from "next/head";
-import EventsAndWeddings from "@/Components/Contant/Eventsandweddings/Events_and_weddings";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-export default function EventsAndWeddingsPage() {
-  return (
-    <>
-      <Head>
-        <title>Events and Weddings | Fotogracia</title>
-        <meta
-          name="description"
-          content="Fotogracia – Wedding and Events Photography"
-        />
-      </Head>
-      <EventsAndWeddings />
-    </>
-  );
+export default function EventsRedirectPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/portfolio?category=couples");
+  }, [router]);
+
+  return null;
 }
+
+EventsRedirectPage.getLayout = (page) => page;
