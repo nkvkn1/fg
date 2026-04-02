@@ -59,10 +59,10 @@ function About() {
               <h3>Connection</h3>
               <p>Building strong relationships with clients to understand their vision.</p>
             </div>
-            <div className="philosophy-item">
+            {/* <div className="philosophy-item">
               <h3>Artistry</h3>
               <p>Infusing every shot with creativity, unique perspective, and expert craftsmanship.</p>
-            </div>
+            </div> */}
           </div>
         </div>
 

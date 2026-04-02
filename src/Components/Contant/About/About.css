@@ -8,6 +8,7 @@
   --color-accent-orange: #d17a47; /* Inspired by the orange coat in the main image */
   --color-background-light: #f8f8f8;
   --color-background-dark: #333333; /* For sections like the footer in the reference */
+  --hero-height: 900px; /* Fixed hero height */
 }
 
 body {
@@ -24,18 +25,21 @@ body {
 
 /* --- HERO SECTION --- */
 .about-hero-section {
-position: relative;
-  height: 500px;
+  position: relative; /* Scrolls with page */
+  height: var(--hero-height);
+  min-height: var(--hero-height);
+  max-height: var(--hero-height);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: var(--color-light);
+  overflow: hidden; /* Prevent content from expanding the hero */
 
   background-image: url('/images/AboutUsMainImage.jpeg');
   background-repeat: no-repeat;
-  background-size: cover;              /* ✅ cinematic fill */
-  background-position: center 23%;     /* ✅ protects subject */
+  background-size: cover;              /* cinematic fill */
+  background-position: center 23%;     /* protects subject */
   
   box-shadow: inset 0 -50px 100px rgba(0, 0, 0, 0.4);
   padding: 20px;

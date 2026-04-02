@@ -29,7 +29,7 @@ const BookNow = () => {
           cheek couples. The ones who love boldly, dare greatly, <br />
           and seek the good in everyday.
         </h2>
-        <Link href="/book-now"><button className="Book-Now-button">Book Now</button></Link>
+        <Link href="https://square.link/u/L2wOSwGP"><button className="Book-Now-button">Book Now</button></Link>
       </div>
 
       
