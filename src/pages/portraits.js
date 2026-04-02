@@ -5,7 +5,7 @@ export default function PortraitsRedirectPage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/services");
+    router.replace("/");
   }, [router]);
 
   return null;

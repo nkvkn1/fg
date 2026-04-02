@@ -8,8 +8,8 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-7xl space-y-10">
         <SectionIntro
           eyebrow="Social Proof"
-          title="Trusted by clients who wanted confidence, chemistry, or stronger listings."
-          copy="Every section is designed to answer the same question visitors are already asking: will this feel easy, and will the result look worth it?"
+          title="Trusted by men who wanted stronger first impressions without looking overdone."
+          copy="The sessions are designed to feel calm and directed, and the finished work is built to look sharp across personal, professional, and matrimonial use."
         />
 
         <div className="grid gap-4 md:grid-cols-3">

@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div className="space-y-7">
           <div className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.28em] text-sand">
-            Premium photography for real people and ambitious brands
+            Premium men&apos;s portrait photography
           </div>
           <div className="space-y-5">
             <motion.h1
@@ -18,7 +18,7 @@ export function HeroSection() {
               transition={{ duration: 0.7 }}
               className="max-w-3xl font-display text-5xl leading-none text-white xs:text-6xl lg:text-7xl"
             >
-              Look like your best self in photos that move people to act.
+              Men&apos;s portraits that look refined, masculine, and unmistakably premium.
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 24 }}
@@ -26,16 +26,16 @@ export function HeroSection() {
               transition={{ duration: 0.75, delay: 0.1 }}
               className="max-w-2xl text-lg leading-8 text-white/70"
             >
-              Men&apos;s portraits that build confidence, couples sessions that
-              feel cinematic, and real estate photography that makes listings
-              feel more valuable from the first scroll.
+              Built for branding, matrimony, and lifestyle sessions with clean
+              direction, moody styling, and portraits that elevate how you are
+              seen online and in person.
             </motion.p>
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button href="/book-now">Book Your Shoot</Button>
-            <Button href="/portfolio" variant="secondary">
-              View Portfolio
+            <Button href="/contact">Inquire Now</Button>
+            <Button href="/about" variant="secondary">
+              About Fotogracia
             </Button>
           </div>
 
@@ -67,7 +67,7 @@ export function HeroSection() {
               2-minute booking
             </p>
             <p className="mt-2 text-sm text-white/75">
-              Pick a shoot, request a date, get confirmation.
+              Choose a session, request a date, get a reply fast.
             </p>
           </div>
 
@@ -83,10 +83,10 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 flex flex-wrap gap-3 p-5">
               <div className="rounded-full border border-white/10 bg-black/40 px-4 py-2 text-xs uppercase tracking-[0.25em] text-white backdrop-blur">
-                Complimentary retouch upgrade
+                Men&apos;s portrait specialist
               </div>
               <div className="rounded-full border border-white/10 bg-black/40 px-4 py-2 text-xs uppercase tracking-[0.25em] text-white backdrop-blur">
-                Mobile-first booking flow
+                5-day turnaround
               </div>
             </div>
           </div>

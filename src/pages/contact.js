@@ -6,7 +6,7 @@ export default function ContactPage() {
     <>
       <Seo
         title="Contact"
-        description="Contact Fotogracia for photography inquiries, Instagram, email, and quick pre-booking questions."
+        description="Contact Fotogracia to inquire about men's branding, matrimony, and lifestyle portrait sessions."
         path="/contact"
       />
       <ContactForm />

@@ -5,7 +5,7 @@ export default function RealEstateRedirectPage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/services?focus=real-estate");
+    router.replace("/");
   }, [router]);
 
   return null;

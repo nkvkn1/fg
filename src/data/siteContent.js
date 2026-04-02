@@ -1,191 +1,149 @@
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const serviceCategories = [
   {
-    slug: "mens-portraits",
-    shortLabel: "Men's Portraits",
-    navLabel: "Portraits",
-    headline: "Look polished, magnetic, and unmistakably yourself.",
+    slug: "branding",
+    shortLabel: "Branding",
+    navLabel: "Branding",
+    headline: "Portraits that make your ambition look grounded, polished, and magnetic.",
     description:
-      "Confidence-led portraits for personal brands, dating profiles, creative launches, and men who want imagery that feels premium without feeling stiff.",
+      "Built for founders, consultants, creatives, and professionals who need portraits that feel elevated enough for business and natural enough for real life.",
     audience:
-      "Founders, professionals, creators, and anyone ready to upgrade how they show up online and in real life.",
-    price: "$290",
-    deliverables: "60-minute shoot, location guidance, 12 retouched images",
-    cta: "Book Your Portrait Session",
-    badge: "Most booked by professionals",
+      "Men refreshing their personal brand, website, LinkedIn, speaking profile, launch assets, or dating profile with a sharper visual identity.",
+    price: "$525",
+    deliverables:
+      "Up to 90 minutes, planning call, location guidance, multiple looks, full edited gallery, 5-day turnaround",
+    cta: "Inquire About Branding",
+    badge: "Most booked",
     image: "/images/IMG_4296-1024x1536.webp",
   },
   {
-    slug: "couples",
-    shortLabel: "Love / Couples",
-    navLabel: "Couples",
-    headline: "Turn real chemistry into photographs that still feel like you.",
+    slug: "lifestyle",
+    shortLabel: "Lifestyle",
+    navLabel: "Lifestyle",
+    headline: "Relaxed, masculine portraits with movement, texture, and a strong everyday presence.",
     description:
-      "Warm, romantic sessions with gentle direction so you can relax, connect, and come away with storytelling images that feel intimate instead of posed.",
+      "A cleaner, more editorial take on casual portraits for men who want imagery that feels premium without looking over-produced.",
     audience:
-      "Dating, engaged, anniversary, and just-because couples who want emotional photos without the awkwardness.",
-    price: "$340",
-    deliverables: "75-minute shoot, styling tips, 18 edited images",
-    cta: "Book Your Couples Shoot",
-    badge: "Includes posing guidance",
-    image: "/images/Youie-and-Serafin-51.webp",
+      "Men who want standout portraits for social, personal milestones, creative updates, or simply to document a stronger version of themselves.",
+    price: "$425",
+    deliverables:
+      "Up to 75 minutes, outfit guidance, natural posing direction, one location, full edited gallery, 5-day turnaround",
+    cta: "Inquire About Lifestyle",
+    badge: "Most versatile",
+    image: "/images/IMG_4328-683x1024.webp",
   },
   {
-    slug: "real-estate",
-    shortLabel: "Real Estate",
-    navLabel: "Real Estate",
-    headline: "Make listings feel brighter, cleaner, and more valuable instantly.",
+    slug: "matrimony",
+    shortLabel: "Matrimony",
+    navLabel: "Matrimony",
+    headline: "Refined portraits that feel sincere, confident, and ready for introductions that matter.",
     description:
-      "Crisp interior and exterior photography designed to elevate listings, speed up inquiries, and help agents market homes with confidence.",
+      "Created for men preparing matrimony or biodata profiles who want photographs that feel respectful, premium, and immediately trustworthy.",
     audience:
-      "Agents, brokers, Airbnb hosts, builders, and property managers who need dependable media that sells the space.",
-    price: "$220",
-    deliverables: "45-minute coverage, MLS-ready edits, 20 delivered images",
-    cta: "Book Real Estate Coverage",
-    badge: "24-hour turnaround available",
-    image: "/images/BookNowMainImage.jpeg",
+      "Men who want polished matrimonial portraits with enough warmth and personality to feel real rather than stiff or overly formal.",
+    price: "$475",
+    deliverables:
+      "Up to 75 minutes, wardrobe refinement, biodata-focused direction, full edited gallery, 5-day turnaround",
+    cta: "Inquire About Matrimony",
+    badge: "Profile-ready",
+    image: "/images/IMG_4178-683x1024.webp",
   },
 ];
 
 export const portfolioItems = [
   {
-    title: "Quiet confidence editorial",
-    category: "mens-portraits",
+    title: "Quiet authority",
+    category: "branding",
     image: "/images/IMG_4296-1024x1536.webp",
-    alt: "Man in black turtleneck portrait session",
+    alt: "Men's branding portrait in black turtleneck",
   },
   {
-    title: "Warm natural light profile",
-    category: "mens-portraits",
+    title: "City confidence",
+    category: "lifestyle",
     image: "/images/IMG_4328-683x1024.webp",
-    alt: "Lifestyle portrait of a man outdoors",
+    alt: "Men's lifestyle portrait outdoors",
   },
   {
-    title: "Refined personal branding look",
-    category: "mens-portraits",
+    title: "Profile-ready classic",
+    category: "matrimony",
     image: "/images/IMG_4178-683x1024.webp",
-    alt: "Professional men's portrait with urban background",
-  },
-  {
-    title: "Romantic city walk",
-    category: "couples",
-    image: "/images/Youie-and-Serafin-51.webp",
-    alt: "Couple smiling together outdoors",
-  },
-  {
-    title: "Anniversary storytelling frame",
-    category: "couples",
-    image: "/images/Youie-and-Serafin-25-1-768x512.webp",
-    alt: "Couple holding hands in soft light",
-  },
-  {
-    title: "Editorial embrace",
-    category: "couples",
-    image: "/images/AboutUsMainImage.jpeg",
-    alt: "Couple portrait during golden hour",
-  },
-  {
-    title: "Bright listing overview",
-    category: "real-estate",
-    image: "/images/BookNowMainImage.jpeg",
-    alt: "Modern living room photographed for real estate",
-  },
-  {
-    title: "Architectural detail feature",
-    category: "real-estate",
-    image: "/images/AboutUsMainImage.jpeg",
-    alt: "Detailed property feature image",
-  },
-  {
-    title: "Lifestyle-ready property scene",
-    category: "real-estate",
-    image: "/images/BookNowMainImage.jpeg",
-    alt: "High-end interior prepared for a listing gallery",
+    alt: "Men's portrait with clean professional styling",
   },
 ];
 
 export const trustPoints = [
   {
-    title: "Simple 3-step booking",
-    copy: "Choose your shoot, pick a date, and get confirmation fast without long back-and-forth emails.",
+    title: "Directed, never awkward",
+    copy: "Every session includes clear posing and expression guidance so you do not have to guess how to stand, move, or look natural.",
   },
   {
-    title: "Direction without awkwardness",
-    copy: "Every session includes light posing help so you look natural, premium, and confident on camera.",
+    title: "Premium without friction",
+    copy: "The process stays simple: inquire, confirm the session, show up prepared, and receive a polished gallery without unnecessary complexity.",
   },
   {
-    title: "Fast, polished delivery",
-    copy: "Edited galleries arrive quickly and are optimized for social, web, print, and listing platforms.",
+    title: "Built for real outcomes",
+    copy: "These portraits are designed to strengthen first impressions across business, matrimony, personal branding, and lifestyle use.",
   },
   {
-    title: "Premium feel, approachable process",
-    copy: "Luxury visuals with a down-to-earth experience that makes first-time clients feel taken care of.",
+    title: "Thoughtful finishing",
+    copy: "Standard delivery is within 5 days, with rush options available when timing matters and you need images sooner.",
   },
 ];
 
 export const testimonials = [
   {
-    name: "Daniel R.",
-    role: "Personal Branding Client",
+    name: "Rahul S.",
+    role: "Branding Session",
     quote:
-      "I walked in nervous and left feeling like I finally had photos that matched how I want to be seen. The whole process felt calm, clear, and incredibly polished.",
+      "I needed portraits that looked high-end but still felt like me. The final gallery gave me exactly that, and I have used the images everywhere.",
   },
   {
-    name: "Maya + Chris",
-    role: "Couples Session",
+    name: "Aditya P.",
+    role: "Lifestyle Session",
     quote:
-      "The shoot felt more like a date than a photo session. We got images that feel emotional, stylish, and completely us without feeling posed.",
+      "I usually hate being photographed, but the direction was so clear that the session felt relaxed from the first few minutes.",
   },
   {
-    name: "Alyssa T.",
-    role: "Real Estate Agent",
+    name: "Karan M.",
+    role: "Matrimony Portrait Session",
     quote:
-      "Listings look cleaner and more expensive immediately. Clients notice the difference, and the turnaround is fast enough for real listing deadlines.",
+      "The photos looked respectful, polished, and natural. They felt right for family introductions without losing personality.",
   },
 ];
 
 export const proofStats = [
-  { value: "24h", label: "fastest real estate turnaround" },
-  { value: "2 min", label: "average booking time" },
-  { value: "100%", label: "guided posing for portraits and couples" },
+  { value: "5 days", label: "standard final gallery delivery" },
+  { value: "$85", label: "2-day rush edit add-on" },
+  { value: "$125", label: "next-day rush edit add-on" },
 ];
 
 export const faqItems = [
   {
-    question: "How fast can I book?",
+    question: "What is included in the session price?",
     answer:
-      "Most clients book in under two minutes. Choose the shoot type, send your preferred date, and we confirm the next step quickly.",
+      "Each session includes planning guidance, posing direction, editing, and a full final gallery of the best finished images. No hard cap is placed on the delivered keepers.",
   },
   {
-    question: "Do you help with posing?",
+    question: "How fast is delivery?",
     answer:
-      "Yes. Every portrait and couples session includes light coaching so you never have to wonder what to do with your hands or where to stand.",
+      "Standard turnaround is 5 days. If you need images faster, 2-day delivery is available for an additional $85 and next-day delivery is available for $125.",
   },
   {
-    question: "Is pricing final?",
+    question: "Which session should I choose?",
     answer:
-      "The listed rates are starting prices for the most common packages. Custom add-ons are available, but the base offer is clear from the start.",
+      "Branding is best for professional visibility, Lifestyle is best for more relaxed editorial portraits, and Matrimony is tailored for profile and biodata use.",
   },
-];
-
-export const instagramPreview = [
-  "/images/IMG_4328-683x1024.webp",
-  "/images/Youie-and-Serafin-51.webp",
-  "/images/BookNowMainImage.jpeg",
-  "/images/IMG_4178-683x1024.webp",
 ];
 
 export const bookingBenefits = [
   "Response within one business day",
-  "Location and wardrobe guidance included",
-  "Retainer collected only after date confirmation",
+  "Wardrobe and location guidance before the shoot",
+  "Full edited gallery delivered in 5 days",
 ];
 
 export const contactDetails = {

@@ -4,13 +4,13 @@ import { SectionIntro } from "@/components/ui/SectionIntro";
 
 export function PricingPreview() {
   return (
-    <section className="px-5 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <section id="pricing" className="px-5 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-white/10 bg-[#111111] p-8 sm:p-10">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro
-            eyebrow="Quick Pricing"
-            title="Clear starting prices reduce friction and help serious leads self-qualify."
-            copy="Simple, transparent offers make it easier for clients to move forward without wondering whether they can afford the experience."
+            eyebrow="Pricing"
+            title="Mid-tier pricing with polished deliverables and no hard cap on your final keepers."
+            copy="These rates are positioned to feel market-real for premium men&apos;s portrait work while keeping the process approachable enough to book with confidence."
           />
 
           <div className="grid gap-4">
@@ -29,17 +29,16 @@ export function PricingPreview() {
                 </div>
                 <div className="flex items-center justify-between gap-4 md:flex-col md:items-end">
                   <p className="font-display text-3xl text-white">{service.price}</p>
-                  <Button href="/book-now" variant="secondary" className="px-4 py-2.5 text-xs">
-                    Book Now
+                  <Button href="/contact" variant="secondary" className="px-4 py-2.5 text-xs">
+                    Inquire
                   </Button>
                 </div>
               </div>
             ))}
 
             <div className="rounded-[1.8rem] border border-gold/25 bg-gold/10 p-5 text-sm leading-7 text-white/78">
-              All bookings currently include a complimentary 3-image retouch
-              upgrade. It is an easy way to leave with a few extra polished
-              favorites for social, web, or listing highlights.
+              Standard delivery is 5 days. Rush delivery is available for an
+              added $85 in 2 days or $125 in 1 day when timing matters.
             </div>
           </div>
         </div>

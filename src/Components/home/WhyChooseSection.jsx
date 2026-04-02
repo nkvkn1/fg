@@ -8,8 +8,8 @@ export function WhyChooseSection() {
       <div className="mx-auto max-w-7xl space-y-10">
         <SectionIntro
           eyebrow="Why Fotogracia"
-          title="A premium experience that stays easy, personal, and low-pressure."
-          copy="The site is designed to convert, but the actual client experience matters just as much. Every touchpoint is tuned for trust and momentum."
+          title="A premium process that still feels easy, clear, and natural."
+          copy="The goal is not just strong photographs. It is a smoother experience for men who want expert direction without a stiff or overcomplicated shoot."
         />
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">

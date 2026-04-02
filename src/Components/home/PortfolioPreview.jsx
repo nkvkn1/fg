@@ -9,9 +9,9 @@ export function PortfolioPreview() {
     <section className="px-5 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl space-y-10">
         <SectionIntro
-          eyebrow="Portfolio Preview"
-          title="Three signature galleries, each built to convert attention into trust."
-          copy="From personal confidence to emotional storytelling to polished listing media, each gallery is designed to show clear value fast."
+          eyebrow="Session Types"
+          title="Choose the portrait session that fits where you are right now."
+          copy="Each session is unmistakably premium, but the focus shifts depending on whether you need business polish, everyday confidence, or profile-ready matrimony portraits."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -41,12 +41,15 @@ export function PortfolioPreview() {
                   <p className="text-sm leading-7 text-white/72">
                     {service.description}
                   </p>
+                  <p className="rounded-[1.2rem] border border-white/10 bg-black/25 px-4 py-3 text-sm leading-7 text-white/68">
+                    {service.deliverables}
+                  </p>
                   <div className="flex items-center justify-between gap-4">
                     <p className="text-sm uppercase tracking-[0.2em] text-white/60">
                       Starting at {service.price}
                     </p>
-                    <Button href={`/portfolio?category=${service.slug}`} variant="secondary">
-                      Explore
+                    <Button href="/contact" variant="secondary">
+                      Inquire
                     </Button>
                   </div>
                 </div>

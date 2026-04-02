@@ -5,8 +5,8 @@ export function FloatingActions() {
   return (
     <>
       <div className="fixed inset-x-0 bottom-4 z-40 px-4 sm:hidden">
-        <Button href="/book-now" className="flex w-full justify-center">
-          Book Now
+        <Button href="/contact" className="flex w-full justify-center">
+          Inquire Now
         </Button>
       </div>
 

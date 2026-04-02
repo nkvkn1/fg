@@ -39,8 +39,8 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href="/book-now" className="px-5 py-2.5 text-xs">
-            Book Now
+          <Button href="/contact" className="px-5 py-2.5 text-xs">
+            Inquire Now
           </Button>
         </div>
 
@@ -77,8 +77,8 @@ export function SiteHeader() {
                   {item.label}
                 </Link>
               ))}
-              <Button href="/book-now" onClick={() => setOpen(false)}>
-                Book Your Shoot
+              <Button href="/contact" onClick={() => setOpen(false)}>
+                Inquire Now
               </Button>
             </div>
           </motion.div>

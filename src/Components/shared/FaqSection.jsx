@@ -7,8 +7,8 @@ export function FaqSection() {
       <div className="mx-auto max-w-7xl space-y-10">
         <SectionIntro
           eyebrow="FAQ"
-          title="A few quick answers that help visitors move forward faster."
-          copy="Keeping this lightweight avoids friction while still handling the most common questions before they become objections."
+          title="A few quick answers that help the right clients move forward faster."
+          copy="The best portrait sites remove hesitation. These are the details most people want before they reach out."
         />
 
         <div className="grid gap-5 lg:grid-cols-3">

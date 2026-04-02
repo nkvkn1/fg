@@ -13,18 +13,18 @@ export function AboutStory() {
             Friendly direction, premium results, and a style rooted in trust.
           </h1>
           <p className="text-base leading-8 text-white/70">
-            Fotogracia was built for people who want images that feel elevated
-            without becoming overly polished or impersonal. The goal is to make
-            clients feel comfortable fast, then create work that makes them feel
-            proud to be seen.
+            Fotogracia is built around one thing: helping men look sharper,
+            more grounded, and more confident in photographs without losing the
+            parts of themselves that make the work feel real.
           </p>
           <p className="text-base leading-8 text-white/70">
-            That means helping men show up with confidence, giving couples a
-            space to connect naturally, and delivering real estate visuals that
-            communicate value clearly from the first click.
+            The approach is calm, intentional, and highly directed. Whether the
+            goal is personal branding, a matrimony profile, or a stronger set of
+            lifestyle portraits, the session is designed to feel natural while
+            still producing work that looks distinctly premium.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button href="/book-now">Book Your Shoot</Button>
+            <Button href="/contact">Inquire Now</Button>
             <Button href="/contact" variant="secondary">
               Start A Conversation
             </Button>
@@ -33,10 +33,10 @@ export function AboutStory() {
 
         <div className="relative overflow-hidden rounded-[2.4rem] border border-white/10">
           <Image
-            src="/images/AboutUsMainImage.jpeg"
+            src="/images/IMG_4178-683x1024.webp"
             alt="Behind the scenes portrait for Fotogracia"
-            width={1000}
-            height={1200}
+            width={683}
+            height={1024}
             className="h-[520px] w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
@@ -46,8 +46,8 @@ export function AboutStory() {
                 Behind the scenes
               </p>
               <p className="mt-3 text-sm leading-7 text-white/75">
-                Sessions are paced to feel natural, collaborative, and relaxed
-                so clients can focus on the moment instead of the camera.
+                Clean styling, subtle mood, and strong direction are what make
+                the final images feel expensive without feeling forced.
               </p>
             </div>
           </div>

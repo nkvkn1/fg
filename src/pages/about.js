@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <Seo
         title="About"
-        description="Meet Fotogracia and learn about the personal, premium approach behind its portrait, couples, and real estate photography."
+        description="Meet Fotogracia and learn about the premium, portrait-first approach behind its branding, matrimony, and lifestyle sessions for men."
         path="/about"
       />
       <AboutStory />

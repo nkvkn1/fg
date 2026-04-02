@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { contactDetails } from "@/data/siteContent";
+import { contactDetails, serviceCategories } from "@/data/siteContent";
 import { Button } from "@/components/ui/Button";
 
 const initialState = {
   name: "",
   email: "",
+  shootType: "",
+  preferredDate: "",
   message: "",
 };
 
@@ -13,6 +15,7 @@ export function ContactForm() {
   const [formData, setFormData] = useState(initialState);
   const [status, setStatus] = useState("idle");
   const [responseMessage, setResponseMessage] = useState("");
+  const minimumDate = new Date().toISOString().split("T")[0];
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -51,11 +54,11 @@ export function ContactForm() {
         <div className="space-y-6 rounded-[2.4rem] border border-white/10 bg-white/5 p-7 sm:p-9">
           <p className="text-xs uppercase tracking-[0.35em] text-sand">Contact</p>
           <h1 className="font-display text-4xl text-white sm:text-5xl">
-            Ask a question, check availability, or say hello.
+            Inquire about your portrait session.
           </h1>
           <p className="text-base leading-8 text-white/68">
-            If you are deciding between services or want a quick answer before
-            booking, this form keeps the conversation simple.
+            Share the type of shoot you want and the timing you have in mind.
+            Fotogracia will follow up with availability and the best next step.
           </p>
           <div className="space-y-4 rounded-[1.8rem] border border-white/10 bg-black/25 p-5">
             <div>
@@ -93,55 +96,86 @@ export function ContactForm() {
 
           <div className="rounded-[1.8rem] border border-gold/25 bg-gold/10 p-5">
             <p className="text-xs uppercase tracking-[0.28em] text-gold">
-              Response time
+              Current offer
             </p>
             <p className="mt-3 text-sm leading-7 text-white/80">
-              Most inquiries get a reply within one business day with next-step
-              guidance and availability options.
+              New inquiries can claim 20% off their shoot when they book from
+              the current offer prompt on the site.
             </p>
           </div>
         </div>
 
         <div className="rounded-[2.4rem] border border-white/10 bg-[#101010] p-7 sm:p-9">
           <form onSubmit={handleSubmit} className="space-y-5">
-            <label className="space-y-2 text-sm text-white/72">
-              <span>Name</span>
-              <input
-                required
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full rounded-[1.3rem] border border-white/10 bg-black/25 px-4 py-3 text-white outline-none transition focus:border-sand"
-                placeholder="Your name"
-              />
-            </label>
-            <label className="space-y-2 text-sm text-white/72">
-              <span>Email</span>
-              <input
-                required
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full rounded-[1.3rem] border border-white/10 bg-black/25 px-4 py-3 text-white outline-none transition focus:border-sand"
-                placeholder="you@example.com"
-              />
-            </label>
+            <div className="grid gap-5 md:grid-cols-2">
+              <label className="space-y-2 text-sm text-white/72">
+                <span>Name</span>
+                <input
+                  required
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full rounded-[1.3rem] border border-white/10 bg-black/25 px-4 py-3 text-white outline-none transition focus:border-sand"
+                  placeholder="Your name"
+                />
+              </label>
+              <label className="space-y-2 text-sm text-white/72">
+                <span>Email</span>
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full rounded-[1.3rem] border border-white/10 bg-black/25 px-4 py-3 text-white outline-none transition focus:border-sand"
+                  placeholder="you@example.com"
+                />
+              </label>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2">
+              <label className="space-y-2 text-sm text-white/72">
+                <span>Session type</span>
+                <select
+                  required
+                  name="shootType"
+                  value={formData.shootType}
+                  onChange={handleChange}
+                  className="w-full rounded-[1.3rem] border border-white/10 bg-black/25 px-4 py-3 text-white outline-none transition focus:border-sand"
+                >
+                  <option value="">Select a session</option>
+                  {serviceCategories.map((service) => (
+                    <option key={service.slug} value={service.shortLabel}>
+                      {service.shortLabel}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <label className="space-y-2 text-sm text-white/72">
+                <span>Preferred date</span>
+                <input
+                  type="date"
+                  name="preferredDate"
+                  value={formData.preferredDate}
+                  onChange={handleChange}
+                  min={minimumDate}
+                  className="w-full rounded-[1.3rem] border border-white/10 bg-black/25 px-4 py-3 text-white outline-none transition focus:border-sand"
+                />
+              </label>
+            </div>
             <label className="space-y-2 text-sm text-white/72">
               <span>Message</span>
               <textarea
-                required
                 name="message"
                 rows={6}
                 value={formData.message}
                 onChange={handleChange}
                 className="w-full rounded-[1.3rem] border border-white/10 bg-black/25 px-4 py-3 text-white outline-none transition focus:border-sand"
-                placeholder="Tell us what you need help with."
+                placeholder="Tell us the vibe, use case, or anything else that matters for your shoot."
               />
             </label>
 
             <Button type="submit" disabled={status === "submitting"}>
-              {status === "submitting" ? "Sending..." : "Send Message"}
+              {status === "submitting" ? "Sending..." : "Send Inquiry"}
             </Button>
 
             {status !== "idle" ? (

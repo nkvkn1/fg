@@ -8,8 +8,8 @@ export function SiteFooter() {
         <div className="space-y-4">
           <p className="font-display text-3xl text-white">Fotogracia</p>
           <p className="max-w-md text-sm leading-7 text-white/60">
-            Premium portrait, couples, and real estate photography designed to
-            help people feel confident, seen, and ready to take the next step.
+            Premium men&apos;s portraits for branding, matrimony, and lifestyle
+            sessions with a moody, clean, and confident visual direction.
           </p>
         </div>
 

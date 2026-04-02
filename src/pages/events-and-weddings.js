@@ -5,7 +5,7 @@ export default function EventsRedirectPage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/portfolio?category=couples");
+    router.replace("/");
   }, [router]);
 
   return null;

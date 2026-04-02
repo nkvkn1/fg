@@ -8,15 +8,15 @@ export function FinalCtaSection() {
           Ready when you are
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl font-display text-4xl text-white sm:text-5xl">
-          Make the next inquiry easy to send and even easier to say yes to.
+          If the work feels right, the next step should feel easy.
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/68 sm:text-lg">
-          Whether you need standout portraits, a meaningful couples session, or
-          listing media that helps sell faster, the booking flow is already set
-          up for momentum.
+          Reach out with the type of session you want, your preferred timing,
+          and the kind of look you want to create. Everything else can be
+          guided from there.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-          <Button href="/book-now">Book Your Shoot</Button>
+          <Button href="/contact">Inquire Now</Button>
           <Button href="/contact" variant="secondary">
             Ask A Question
           </Button>
