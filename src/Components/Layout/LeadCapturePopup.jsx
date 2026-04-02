@@ -37,14 +37,14 @@ export function LeadCapturePopup() {
             className="w-full max-w-md rounded-[2rem] border border-white/10 bg-[#101010] p-7 text-white shadow-glow"
           >
             <p className="text-xs uppercase tracking-[0.35em] text-sand">
-              Limited-time offer
+              Booking bonus
             </p>
             <h3 className="mt-3 font-display text-3xl">
-              Book this week and get 3 bonus edits included.
+              Book now and receive 3 complimentary signature retouches.
             </h3>
             <p className="mt-4 text-sm leading-7 text-white/70">
-              Perfect if you have been waiting for the right moment to lock in a
-              portrait, couples, or listing shoot with low friction.
+              A polished extra set for profile photos, social posts, listing
+              highlights, or keepsake favorites at no extra charge.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Button href="/book-now" className="flex-1" onClick={dismiss}>

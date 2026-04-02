@@ -83,7 +83,7 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 flex flex-wrap gap-3 p-5">
               <div className="rounded-full border border-white/10 bg-black/40 px-4 py-2 text-xs uppercase tracking-[0.25em] text-white backdrop-blur">
-                Bonus edits this week
+                Complimentary retouch upgrade
               </div>
               <div className="rounded-full border border-white/10 bg-black/40 px-4 py-2 text-xs uppercase tracking-[0.25em] text-white backdrop-blur">
                 Mobile-first booking flow

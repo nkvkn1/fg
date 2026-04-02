@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
 import NavbarLap from '../../Navbar/NavbarLap/NavbarLap';
 import FixNavbarLap from '../../Navbar/NavbarLap/FixNavbarLap';
 
@@ -36,13 +37,13 @@ const LapHeader = () => {
         {/* 1. The Logo Section (Restored to original position) */}
         <div className='HeaderLap'>
           <div className='HeaderLapLogo'>
-            <a href="/" className='HeaderLapLogoLink'>
+            <Link href="/" className='HeaderLapLogoLink'>
               <img
                 className='HeaderLapLogoImg'
                 src="/images/FotograciaLOGO.png"
                 alt="FOTOGRACIA"
               />
-            </a>
+            </Link>
           </div>
         </div>
 

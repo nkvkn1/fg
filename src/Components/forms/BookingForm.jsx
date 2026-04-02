@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { serviceCategories } from "@/data/siteContent";
+import { bookingBenefits, serviceCategories } from "@/data/siteContent";
 
 const defaultForm = {
   name: "",
@@ -22,6 +22,7 @@ export function BookingForm() {
   });
   const [status, setStatus] = useState("idle");
   const [confirmation, setConfirmation] = useState("");
+  const minimumDate = new Date().toISOString().split("T")[0];
 
   useEffect(() => {
     setFormData((current) => ({ ...current, shootType: presetType }));
@@ -146,6 +147,7 @@ export function BookingForm() {
                   name="preferredDate"
                   value={formData.preferredDate}
                   onChange={handleChange}
+                  min={minimumDate}
                   className="w-full rounded-[1.3rem] border border-white/10 bg-black/25 px-4 py-3 text-white outline-none transition focus:border-sand"
                 />
               </label>
@@ -202,15 +204,15 @@ export function BookingForm() {
                 </p>
                 <p className="mt-2 text-sm leading-7 text-white/62">
                   {selectedService?.deliverables ||
-                    "Pick a category to preview starting price and what is included."}
+                    "Choose a category to see what is included and what the session starts at."}
                 </p>
               </div>
               <div className="rounded-[1.6rem] border border-gold/25 bg-gold/10 p-5">
                 <p className="text-xs uppercase tracking-[0.28em] text-gold">
-                  No-brainer offer
+                  Included right now
                 </p>
                 <p className="mt-3 text-sm leading-7 text-white/80">
-                  Book now and receive 3 bonus edits at no extra charge.
+                  Every new booking includes 3 complimentary signature retouches.
                 </p>
               </div>
             </div>
@@ -218,29 +220,27 @@ export function BookingForm() {
 
           <div className="rounded-[2.2rem] border border-white/10 bg-white/5 p-7">
             <p className="text-xs uppercase tracking-[0.35em] text-sand">
-              Optional payment UI
+              What happens next
             </p>
-            <div className="mt-5 rounded-[1.7rem] border border-white/10 bg-black/30 p-5">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-white/60">Reserve your date</p>
-                  <p className="mt-2 font-display text-3xl text-white">$99</p>
+            <div className="mt-5 space-y-4 rounded-[1.7rem] border border-white/10 bg-black/30 p-5">
+              {bookingBenefits.map((item) => (
+                <div
+                  key={item}
+                  className="flex items-start gap-3 rounded-[1.2rem] border border-white/10 bg-white/[0.03] px-4 py-3"
+                >
+                  <div className="mt-1 h-2.5 w-2.5 rounded-full bg-sand" />
+                  <p className="text-sm leading-7 text-white/72">{item}</p>
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-xs uppercase tracking-[0.2em] text-white/65">
-                  Stripe UI placeholder
-                </div>
+              ))}
+              <div className="rounded-[1.2rem] border border-white/10 bg-white/[0.03] p-4">
+                <p className="text-xs uppercase tracking-[0.22em] text-sand">
+                  Date reserve
+                </p>
+                <p className="mt-3 text-sm leading-7 text-white/70">
+                  Once your date is confirmed, your session can be secured with a
+                  $99 retainer applied toward the final balance.
+                </p>
               </div>
-              <p className="mt-4 text-sm leading-7 text-white/62">
-                This is a visual placeholder so the flow feels complete. Hooking
-                this into Stripe Checkout later will be straightforward.
-              </p>
-              <button
-                type="button"
-                disabled
-                className="mt-5 w-full rounded-full border border-white/10 px-5 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white/45"
-              >
-                Pay Deposit Soon
-              </button>
             </div>
           </div>
         </aside>

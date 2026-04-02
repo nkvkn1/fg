@@ -23,6 +23,38 @@ export function PortfolioGallery() {
     setActiveCategory(defaultCategory);
   }, [defaultCategory]);
 
+  useEffect(() => {
+    if (!selectedItem) {
+      return undefined;
+    }
+
+    const currentIndex = portfolioItems.findIndex(
+      (item) =>
+        item.title === selectedItem.title && item.category === selectedItem.category
+    );
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setSelectedItem(null);
+      }
+
+      if (event.key === "ArrowRight") {
+        const nextIndex = (currentIndex + 1) % portfolioItems.length;
+        setSelectedItem(portfolioItems[nextIndex]);
+      }
+
+      if (event.key === "ArrowLeft") {
+        const previousIndex =
+          (currentIndex - 1 + portfolioItems.length) % portfolioItems.length;
+        setSelectedItem(portfolioItems[previousIndex]);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedItem]);
+
   const filteredItems = useMemo(() => {
     if (activeCategory === "all") {
       return portfolioItems;
@@ -30,6 +62,23 @@ export function PortfolioGallery() {
 
     return portfolioItems.filter((item) => item.category === activeCategory);
   }, [activeCategory]);
+
+  const navigateLightbox = (direction) => {
+    if (!selectedItem) {
+      return;
+    }
+
+    const currentIndex = portfolioItems.findIndex(
+      (item) =>
+        item.title === selectedItem.title && item.category === selectedItem.category
+    );
+    const nextIndex =
+      direction === "next"
+        ? (currentIndex + 1) % portfolioItems.length
+        : (currentIndex - 1 + portfolioItems.length) % portfolioItems.length;
+
+    setSelectedItem(portfolioItems[nextIndex]);
+  };
 
   return (
     <>
@@ -117,6 +166,20 @@ export function PortfolioGallery() {
                 >
                   Close
                 </button>
+                <button
+                  type="button"
+                  onClick={() => navigateLightbox("previous")}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full border border-white/15 bg-black/40 px-4 py-3 text-xs uppercase tracking-[0.2em] text-white"
+                >
+                  Prev
+                </button>
+                <button
+                  type="button"
+                  onClick={() => navigateLightbox("next")}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full border border-white/15 bg-black/40 px-4 py-3 text-xs uppercase tracking-[0.2em] text-white"
+                >
+                  Next
+                </button>
               </div>
               <div className="space-y-2 p-5">
                 <p className="text-xs uppercase tracking-[0.32em] text-sand">
@@ -124,6 +187,9 @@ export function PortfolioGallery() {
                 </p>
                 <p className="font-display text-3xl text-white">
                   {selectedItem.title}
+                </p>
+                <p className="text-sm text-white/55">
+                  Use the arrow keys to move through the gallery.
                 </p>
               </div>
             </motion.div>

@@ -6,7 +6,7 @@ export default function BookNowPage() {
     <>
       <Seo
         title="Book Now"
-        description="Book a Fotogracia shoot in minutes with a simple photography inquiry form for portraits, couples sessions, and real estate projects."
+        description="Book a Fotogracia shoot in minutes with a streamlined inquiry form for portraits, couples sessions, and real estate projects."
         path="/book-now"
       />
       <BookingForm />

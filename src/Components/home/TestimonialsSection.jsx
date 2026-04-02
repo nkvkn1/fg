@@ -1,4 +1,4 @@
-import { testimonials } from "@/data/siteContent";
+import { proofStats, testimonials } from "@/data/siteContent";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 
@@ -9,8 +9,22 @@ export function TestimonialsSection() {
         <SectionIntro
           eyebrow="Social Proof"
           title="Trusted by clients who wanted confidence, chemistry, or stronger listings."
-          copy="These are placeholders for now, but the structure is ready for real testimonials, logos, or star-rating snippets as soon as you have them."
+          copy="Every section is designed to answer the same question visitors are already asking: will this feel easy, and will the result look worth it?"
         />
+
+        <div className="grid gap-4 md:grid-cols-3">
+          {proofStats.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-[1.7rem] border border-white/10 bg-black/25 p-5"
+            >
+              <p className="font-display text-4xl text-white">{stat.value}</p>
+              <p className="mt-2 text-xs uppercase tracking-[0.25em] text-white/55">
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
           {testimonials.map((item, index) => (

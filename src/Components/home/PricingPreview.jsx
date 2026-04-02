@@ -37,9 +37,9 @@ export function PricingPreview() {
             ))}
 
             <div className="rounded-[1.8rem] border border-gold/25 bg-gold/10 p-5 text-sm leading-7 text-white/78">
-              This week&apos;s offer: book any shoot and receive 3 bonus edits at no
-              extra charge. Great for social posts, listing highlights, or profile
-              photos that need one extra polished option.
+              All bookings currently include a complimentary 3-image retouch
+              upgrade. It is an easy way to leave with a few extra polished
+              favorites for social, web, or listing highlights.
             </div>
           </div>
         </div>

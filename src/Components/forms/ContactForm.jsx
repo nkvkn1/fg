@@ -78,6 +78,27 @@ export function ContactForm() {
                 @fotogracia
               </a>
             </div>
+            <div>
+              <p className="text-sm text-white/58">WhatsApp</p>
+              <a
+                href={contactDetails.whatsapp}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-2 block text-lg text-white"
+              >
+                Start a quick chat
+              </a>
+            </div>
+          </div>
+
+          <div className="rounded-[1.8rem] border border-gold/25 bg-gold/10 p-5">
+            <p className="text-xs uppercase tracking-[0.28em] text-gold">
+              Response time
+            </p>
+            <p className="mt-3 text-sm leading-7 text-white/80">
+              Most inquiries get a reply within one business day with next-step
+              guidance and availability options.
+            </p>
           </div>
         </div>
 

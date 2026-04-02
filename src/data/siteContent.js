@@ -135,20 +135,26 @@ export const testimonials = [
     name: "Daniel R.",
     role: "Personal Branding Client",
     quote:
-      "I walked in nervous and left feeling like I finally had photos that matched how I want to be seen. The whole process felt effortless.",
+      "I walked in nervous and left feeling like I finally had photos that matched how I want to be seen. The whole process felt calm, clear, and incredibly polished.",
   },
   {
     name: "Maya + Chris",
     role: "Couples Session",
     quote:
-      "The shoot felt more like a date than a photo session. We got images that feel emotional, stylish, and completely us.",
+      "The shoot felt more like a date than a photo session. We got images that feel emotional, stylish, and completely us without feeling posed.",
   },
   {
     name: "Alyssa T.",
     role: "Real Estate Agent",
     quote:
-      "Listings look cleaner and more expensive immediately. Clients notice the difference, and the turnaround is exactly what I need.",
+      "Listings look cleaner and more expensive immediately. Clients notice the difference, and the turnaround is fast enough for real listing deadlines.",
   },
+];
+
+export const proofStats = [
+  { value: "24h", label: "fastest real estate turnaround" },
+  { value: "2 min", label: "average booking time" },
+  { value: "100%", label: "guided posing for portraits and couples" },
 ];
 
 export const faqItems = [
@@ -174,6 +180,12 @@ export const instagramPreview = [
   "/images/Youie-and-Serafin-51.webp",
   "/images/BookNowMainImage.jpeg",
   "/images/IMG_4178-683x1024.webp",
+];
+
+export const bookingBenefits = [
+  "Response within one business day",
+  "Location and wardrobe guidance included",
+  "Retainer collected only after date confirmation",
 ];
 
 export const contactDetails = {

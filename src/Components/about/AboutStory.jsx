@@ -34,7 +34,7 @@ export function AboutStory() {
         <div className="relative overflow-hidden rounded-[2.4rem] border border-white/10">
           <Image
             src="/images/AboutUsMainImage.jpeg"
-            alt="Behind the scenes placeholder for Fotogracia"
+            alt="Behind the scenes portrait for Fotogracia"
             width={1000}
             height={1200}
             className="h-[520px] w-full object-cover"
@@ -46,8 +46,8 @@ export function AboutStory() {
                 Behind the scenes
               </p>
               <p className="mt-3 text-sm leading-7 text-white/75">
-                Swap this image with a real BTS portrait or working scene to make
-                the personal brand side even stronger.
+                Sessions are paced to feel natural, collaborative, and relaxed
+                so clients can focus on the moment instead of the camera.
               </p>
             </div>
           </div>
