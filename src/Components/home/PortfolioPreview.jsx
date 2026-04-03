@@ -9,15 +9,15 @@ export function PortfolioPreview() {
     <section className="px-5 py-16 sm:px-6 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl space-y-10">
         <SectionIntro
-          eyebrow="Session Types"
+          eyebrow="Portrait Sessions"
           title="Choose the portrait session that fits where you are right now."
-          copy="Each session is unmistakably premium, but the focus shifts depending on whether you need business polish, everyday confidence, or profile-ready matrimony portraits."
+          copy="Each session carries the same polished Fotogracia finish, with the focus shaped around business presence, everyday confidence, or matrimony portraits that feel composed and sincere."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
           {serviceCategories.map((service, index) => (
             <Reveal key={service.slug} delay={index * 0.08}>
-              <article className="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
+              <article className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
                 <div className="relative overflow-hidden">
                   <Image
                     src={service.image}
@@ -37,20 +37,25 @@ export function PortfolioPreview() {
                   </div>
                 </div>
 
-                <div className="space-y-5 p-6">
+                <div className="flex flex-1 flex-col space-y-5 p-6">
                   <p className="text-sm leading-7 text-white/72">
                     {service.description}
                   </p>
                   <p className="rounded-[1.2rem] border border-white/10 bg-black/25 px-4 py-3 text-sm leading-7 text-white/68">
                     {service.deliverables}
                   </p>
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="mt-auto space-y-4">
                     <p className="text-sm uppercase tracking-[0.2em] text-white/60">
                       Starting at {service.price}
                     </p>
-                    <Button href="/contact" variant="secondary">
-                      Inquire
-                    </Button>
+                    <div className="flex flex-col gap-3 sm:flex-row">
+                      <Button href={`/portfolio?category=${service.slug}`} variant="secondary">
+                        Portfolio
+                      </Button>
+                      <Button href="/contact" className="sm:flex-1">
+                        Inquire
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </article>

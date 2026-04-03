@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { contactDetails, navLinks } from "@/data/siteContent";
+import { ProtectedPhoneLink } from "@/components/ui/ProtectedPhoneLink";
 
 export function SiteFooter() {
   return (
@@ -34,6 +35,11 @@ export function SiteFooter() {
             <a href={`mailto:${contactDetails.email}`} className="hover:text-white">
               {contactDetails.email}
             </a>
+            <ProtectedPhoneLink
+              label="Call or text"
+              className="flex items-center gap-3 text-left hover:text-white"
+              revealClassName="text-white/50"
+            />
             <a
               href={contactDetails.instagram}
               target="_blank"

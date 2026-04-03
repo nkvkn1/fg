@@ -9,8 +9,8 @@ export function PricingPreview() {
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro
             eyebrow="Pricing"
-            title="Mid-tier pricing with polished deliverables and no hard cap on your final keepers."
-            copy="These rates are positioned to feel market-real for premium men&apos;s portrait work while keeping the process approachable enough to book with confidence."
+            title="Clear session pricing with polished deliverables and no cap on your final keepers."
+            copy="Each session includes thoughtful planning, strong direction, and a fully edited gallery delivered with the same clean premium finish."
           />
 
           <div className="grid gap-4">

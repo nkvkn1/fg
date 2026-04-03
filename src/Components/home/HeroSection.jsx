@@ -62,18 +62,9 @@ export function HeroSection() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="relative"
         >
-          <div className="absolute -left-6 top-10 hidden rounded-[2rem] border border-white/10 bg-black/40 p-4 backdrop-blur md:block">
-            <p className="text-xs uppercase tracking-[0.32em] text-sand">
-              2-minute booking
-            </p>
-            <p className="mt-2 text-sm text-white/75">
-              Choose a session, request a date, get a reply fast.
-            </p>
-          </div>
-
           <div className="relative overflow-hidden rounded-[2.3rem] border border-white/10">
             <Image
-              src="/images/IMG_4296-1024x1536.webp"
+              src="https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-1-of-7-scaled.jpg"
               alt="Hero portrait for Fotogracia"
               width={1024}
               height={1536}
@@ -83,10 +74,10 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 flex flex-wrap gap-3 p-5">
               <div className="rounded-full border border-white/10 bg-black/40 px-4 py-2 text-xs uppercase tracking-[0.25em] text-white backdrop-blur">
-                Men&apos;s portrait specialist
+                5-day turnaround
               </div>
               <div className="rounded-full border border-white/10 bg-black/40 px-4 py-2 text-xs uppercase tracking-[0.25em] text-white backdrop-blur">
-                5-day turnaround
+                20% off current offer
               </div>
             </div>
           </div>

@@ -6,6 +6,38 @@ export const navLinks = [
 
 export const serviceCategories = [
   {
+    slug: "lifestyle",
+    shortLabel: "Lifestyle",
+    navLabel: "Lifestyle",
+    headline: "Relaxed, masculine portraits with movement, texture, and a strong everyday presence.",
+    description:
+      "A clean, editorial take on casual portraits for men who want imagery that feels polished without looking over-produced.",
+    audience:
+      "Men who want standout portraits for social, personal milestones, creative updates, or simply to document a stronger version of themselves.",
+    price: "$425",
+    deliverables:
+      "Up to 75 minutes, outfit guidance, natural posing direction, one location, full edited gallery, 5-day turnaround",
+    cta: "Inquire About Lifestyle",
+    badge: "Most versatile",
+    image: "https://fotogracia.com/wp-content/uploads/2026/03/Kaushiks-portrait-28-scaled.jpg",
+  },
+  {
+    slug: "matrimony",
+    shortLabel: "Matrimony",
+    navLabel: "Matrimony",
+    headline: "Refined portraits that feel sincere, confident, and ready for introductions that matter.",
+    description:
+      "Created for men preparing matrimony or biodata profiles who want photographs that feel respectful, polished, and immediately trustworthy.",
+    audience:
+      "Men who want polished matrimonial portraits with enough warmth and personality to feel real rather than stiff or overly formal.",
+    price: "$475",
+    deliverables:
+      "Up to 75 minutes, wardrobe refinement, biodata-focused direction, full edited gallery, 5-day turnaround",
+    cta: "Inquire About Matrimony",
+    badge: "Profile-ready",
+    image: "https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-4-of-7-scaled.jpg",
+  },
+  {
     slug: "branding",
     shortLabel: "Branding",
     navLabel: "Branding",
@@ -19,39 +51,7 @@ export const serviceCategories = [
       "Up to 90 minutes, planning call, location guidance, multiple looks, full edited gallery, 5-day turnaround",
     cta: "Inquire About Branding",
     badge: "Most booked",
-    image: "/images/IMG_4296-1024x1536.webp",
-  },
-  {
-    slug: "lifestyle",
-    shortLabel: "Lifestyle",
-    navLabel: "Lifestyle",
-    headline: "Relaxed, masculine portraits with movement, texture, and a strong everyday presence.",
-    description:
-      "A cleaner, more editorial take on casual portraits for men who want imagery that feels premium without looking over-produced.",
-    audience:
-      "Men who want standout portraits for social, personal milestones, creative updates, or simply to document a stronger version of themselves.",
-    price: "$425",
-    deliverables:
-      "Up to 75 minutes, outfit guidance, natural posing direction, one location, full edited gallery, 5-day turnaround",
-    cta: "Inquire About Lifestyle",
-    badge: "Most versatile",
-    image: "/images/IMG_4328-683x1024.webp",
-  },
-  {
-    slug: "matrimony",
-    shortLabel: "Matrimony",
-    navLabel: "Matrimony",
-    headline: "Refined portraits that feel sincere, confident, and ready for introductions that matter.",
-    description:
-      "Created for men preparing matrimony or biodata profiles who want photographs that feel respectful, premium, and immediately trustworthy.",
-    audience:
-      "Men who want polished matrimonial portraits with enough warmth and personality to feel real rather than stiff or overly formal.",
-    price: "$475",
-    deliverables:
-      "Up to 75 minutes, wardrobe refinement, biodata-focused direction, full edited gallery, 5-day turnaround",
-    cta: "Inquire About Matrimony",
-    badge: "Profile-ready",
-    image: "/images/IMG_4178-683x1024.webp",
+    image: "https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-1-of-7-scaled.jpg",
   },
 ];
 
@@ -59,20 +59,20 @@ export const portfolioItems = [
   {
     title: "Quiet authority",
     category: "branding",
-    image: "/images/IMG_4296-1024x1536.webp",
+    image: "https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-1-of-7-scaled.jpg",
     alt: "Men's branding portrait in black turtleneck",
-  },
-  {
-    title: "City confidence",
-    category: "lifestyle",
-    image: "/images/IMG_4328-683x1024.webp",
-    alt: "Men's lifestyle portrait outdoors",
   },
   {
     title: "Profile-ready classic",
     category: "matrimony",
-    image: "/images/IMG_4178-683x1024.webp",
+    image: "https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-4-of-7-scaled.jpg",
     alt: "Men's portrait with clean professional styling",
+  },
+  {
+    title: "City confidence",
+    category: "lifestyle",
+    image: "https://fotogracia.com/wp-content/uploads/2026/03/Kaushiks-portrait-28-scaled.jpg",
+    alt: "Men's lifestyle portrait outdoors",
   },
 ];
 
@@ -147,7 +147,7 @@ export const bookingBenefits = [
 ];
 
 export const contactDetails = {
-  email: "hello@fotogracia.com",
+  email: "info@fotogracia.com",
   instagram: "https://instagram.com/fotogracia",
-  whatsapp: "https://wa.me/16475550101",
+  whatsapp: "https://wa.me/16478321081",
 };

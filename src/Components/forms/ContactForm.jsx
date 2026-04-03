@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { contactDetails, serviceCategories } from "@/data/siteContent";
 import { Button } from "@/components/ui/Button";
+import { ProtectedPhoneLink } from "@/components/ui/ProtectedPhoneLink";
 
 const initialState = {
   name: "",
@@ -82,6 +83,14 @@ export function ContactForm() {
               </a>
             </div>
             <div>
+              <p className="text-sm text-white/58">Phone</p>
+              <ProtectedPhoneLink
+                label="Call or text"
+                className="mt-2 flex items-center gap-3 text-left text-lg text-white"
+                revealClassName="text-sm text-white/60"
+              />
+            </div>
+            <div>
               <p className="text-sm text-white/58">WhatsApp</p>
               <a
                 href={contactDetails.whatsapp}
@@ -99,8 +108,8 @@ export function ContactForm() {
               Current offer
             </p>
             <p className="mt-3 text-sm leading-7 text-white/80">
-              New inquiries can claim 20% off their shoot when they book from
-              the current offer prompt on the site.
+              The current 20% offer can be applied to new bookings when you
+              mention it in your inquiry.
             </p>
           </div>
         </div>
