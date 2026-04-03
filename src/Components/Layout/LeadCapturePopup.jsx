@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/Components/ui/Button";
 
 export function LeadCapturePopup() {
   const [open, setOpen] = useState(false);

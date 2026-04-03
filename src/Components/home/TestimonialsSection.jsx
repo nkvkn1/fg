@@ -1,6 +1,6 @@
 import { proofStats, testimonials } from "@/data/siteContent";
-import { Reveal } from "@/components/ui/Reveal";
-import { SectionIntro } from "@/components/ui/SectionIntro";
+import { Reveal } from "@/Components/ui/Reveal";
+import { SectionIntro } from "@/Components/ui/SectionIntro";
 
 export function TestimonialsSection() {
   return (

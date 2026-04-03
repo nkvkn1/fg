@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/Components/ui/Button";
 import { serviceCategories } from "@/data/siteContent";
 
 export function HeroSection() {

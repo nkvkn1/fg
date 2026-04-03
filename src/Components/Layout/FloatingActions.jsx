@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/Components/ui/Button";
 import { contactDetails } from "@/data/siteContent";
 
 export function FloatingActions() {

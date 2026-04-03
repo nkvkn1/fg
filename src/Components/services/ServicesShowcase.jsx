@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
-import { SectionIntro } from "@/components/ui/SectionIntro";
-import { Reveal } from "@/components/ui/Reveal";
+import { Button } from "@/Components/ui/Button";
+import { SectionIntro } from "@/Components/ui/SectionIntro";
+import { Reveal } from "@/Components/ui/Reveal";
 import { serviceCategories } from "@/data/siteContent";
 
 export function ServicesShowcase() {

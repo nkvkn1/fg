@@ -1,11 +1,11 @@
-import { Seo } from "@/components/seo/Seo";
-import { HeroSection } from "@/components/home/HeroSection";
-import { PortfolioPreview } from "@/components/home/PortfolioPreview";
-import { WhyChooseSection } from "@/components/home/WhyChooseSection";
-import { TestimonialsSection } from "@/components/home/TestimonialsSection";
-import { PricingPreview } from "@/components/home/PricingPreview";
-import { FinalCtaSection } from "@/components/home/FinalCtaSection";
-import { FaqSection } from "@/components/shared/FaqSection";
+import { Seo } from "@/Components/seo/Seo";
+import { HeroSection } from "@/Components/home/HeroSection";
+import { PortfolioPreview } from "@/Components/home/PortfolioPreview";
+import { WhyChooseSection } from "@/Components/home/WhyChooseSection";
+import { TestimonialsSection } from "@/Components/home/TestimonialsSection";
+import { PricingPreview } from "@/Components/home/PricingPreview";
+import { FinalCtaSection } from "@/Components/home/FinalCtaSection";
+import { FaqSection } from "@/Components/shared/FaqSection";
 
 export default function HomePage() {
   return (

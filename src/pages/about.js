@@ -1,6 +1,6 @@
-import { Seo } from "@/components/seo/Seo";
-import { AboutStory } from "@/components/about/AboutStory";
-import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { Seo } from "@/Components/seo/Seo";
+import { AboutStory } from "@/Components/about/AboutStory";
+import { TestimonialsSection } from "@/Components/home/TestimonialsSection";
 
 export default function AboutPage() {
   return (

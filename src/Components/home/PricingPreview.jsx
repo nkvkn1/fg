@@ -1,6 +1,6 @@
 import { serviceCategories } from "@/data/siteContent";
-import { Button } from "@/components/ui/Button";
-import { SectionIntro } from "@/components/ui/SectionIntro";
+import { Button } from "@/Components/ui/Button";
+import { SectionIntro } from "@/Components/ui/SectionIntro";
 
 export function PricingPreview() {
   return (

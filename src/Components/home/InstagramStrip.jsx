@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { contactDetails, instagramPreview } from "@/data/siteContent";
-import { SectionIntro } from "@/components/ui/SectionIntro";
+import { SectionIntro } from "@/Components/ui/SectionIntro";
 
 export function InstagramStrip() {
   return (

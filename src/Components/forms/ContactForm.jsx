@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { contactDetails, serviceCategories } from "@/data/siteContent";
-import { Button } from "@/components/ui/Button";
-import { ProtectedPhoneLink } from "@/components/ui/ProtectedPhoneLink";
+import { Button } from "@/Components/ui/Button";
+import { ProtectedPhoneLink } from "@/Components/ui/ProtectedPhoneLink";
 
 const initialState = {
   name: "",

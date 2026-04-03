@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import { SiteShell } from "@/components/layout/SiteShell";
+import { SiteShell } from "@/Components/Layout/SiteShell";
 
 export default function App({ Component, pageProps }) {
   const getLayout =

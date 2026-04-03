@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/Components/ui/Button";
 import { bookingBenefits, serviceCategories } from "@/data/siteContent";
 
 const defaultForm = {

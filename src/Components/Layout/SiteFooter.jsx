@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { contactDetails, navLinks } from "@/data/siteContent";
-import { ProtectedPhoneLink } from "@/components/ui/ProtectedPhoneLink";
+import { ProtectedPhoneLink } from "@/Components/ui/ProtectedPhoneLink";
 
 export function SiteFooter() {
   return (

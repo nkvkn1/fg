@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { serviceCategories } from "@/data/siteContent";
-import { Button } from "@/components/ui/Button";
-import { Reveal } from "@/components/ui/Reveal";
-import { SectionIntro } from "@/components/ui/SectionIntro";
+import { Button } from "@/Components/ui/Button";
+import { Reveal } from "@/Components/ui/Reveal";
+import { SectionIntro } from "@/Components/ui/SectionIntro";
 
 export function PortfolioPreview() {
   return (

@@ -1,7 +1,7 @@
-import { Seo } from "@/components/seo/Seo";
-import { PortfolioGallery } from "@/components/portfolio/PortfolioGallery";
-import { SectionIntro } from "@/components/ui/SectionIntro";
-import { FinalCtaSection } from "@/components/home/FinalCtaSection";
+import { Seo } from "@/Components/seo/Seo";
+import { PortfolioGallery } from "@/Components/portfolio/PortfolioGallery";
+import { SectionIntro } from "@/Components/ui/SectionIntro";
+import { FinalCtaSection } from "@/Components/home/FinalCtaSection";
 
 export default function PortfolioPage() {
   return (

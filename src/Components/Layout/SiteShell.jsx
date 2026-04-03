@@ -1,7 +1,7 @@
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SiteFooter } from "@/components/layout/SiteFooter";
-import { FloatingActions } from "@/components/layout/FloatingActions";
-import { LeadCapturePopup } from "@/components/layout/LeadCapturePopup";
+import { SiteHeader } from "@/Components/Layout/SiteHeader";
+import { SiteFooter } from "@/Components/Layout/SiteFooter";
+import { FloatingActions } from "@/Components/Layout/FloatingActions";
+import { LeadCapturePopup } from "@/Components/Layout/LeadCapturePopup";
 
 export function SiteShell({ children }) {
   return (
