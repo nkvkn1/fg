@@ -1,7 +1,16 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/components/layout/*": ["./src/Components/Layout/*"],
+      "@/components/seo/*": ["./src/Components/seo/*"],
+      "@/components/about/*": ["./src/Components/about/*"],
+      "@/components/home/*": ["./src/Components/home/*"],
+      "@/components/forms/*": ["./src/Components/forms/*"],
+      "@/components/shared/*": ["./src/Components/shared/*"],
+      "@/components/portfolio/*": ["./src/Components/portfolio/*"],
+      "@/components/services/*": ["./src/Components/services/*"],
+      "@/components/ui/*": ["./src/Components/ui/*"]
     }
   }
 }
