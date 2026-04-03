@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function About() {
   return (
@@ -34,10 +35,12 @@ function About() {
           </div>
           <div className="about-profile-photo-container">
             {/* TODO: Add your profile photo to public/images/profile-photo.jpg */}
-            <img 
-              src="/images/BookNowMainImage.jpeg" 
-              alt="Your Profile" 
-              className="profile-photo" 
+            <Image
+              src="/images/BookNowMainImage.jpeg"
+              alt="Your Profile"
+              className="profile-photo"
+              width={1200}
+              height={800}
             />
             <p className="photo-caption">niki - Photographer &amp; Artist</p>
           </div>

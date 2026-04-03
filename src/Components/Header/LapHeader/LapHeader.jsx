@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import NavbarLap from '../../Navbar/NavbarLap/NavbarLap';
 import FixNavbarLap from '../../Navbar/NavbarLap/FixNavbarLap';
@@ -38,10 +39,12 @@ const LapHeader = () => {
         <div className='HeaderLap'>
           <div className='HeaderLapLogo'>
             <Link href="/" className='HeaderLapLogoLink'>
-              <img
+              <Image
                 className='HeaderLapLogoImg'
                 src="/images/FotograciaLOGO.png"
                 alt="FOTOGRACIA"
+                width={300}
+                height={110}
               />
             </Link>
           </div>

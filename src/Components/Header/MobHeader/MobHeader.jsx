@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 import NavbarMob from '../../Navbar/NavbarMob/NavbarMob';
 
@@ -16,7 +17,7 @@ const MobHeader = () => {
       <div className='Header_Mob_Logo_Div'>
         <div className='Header_Mob_Logo'>
           <Link className='Header_Mob_Logo_Link' href="/">
-            <img
+            <Image
               className='Mob_Logo_Link'
               src="/images/FotograciaLOGO.png"
               alt="FOTOGRACIA"
