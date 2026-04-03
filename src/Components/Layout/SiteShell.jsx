@@ -7,7 +7,10 @@ export function SiteShell({ children }) {
   return (
     <div className="min-h-screen bg-ink bg-haze text-white">
       <SiteHeader />
-      <main>{children}</main>
+      <main className="relative">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-white/[0.03] to-transparent" />
+        {children}
+      </main>
       <SiteFooter />
       <FloatingActions />
       <LeadCapturePopup />

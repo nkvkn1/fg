@@ -146,6 +146,12 @@ export const bookingBenefits = [
   "Full edited gallery delivered in 5 days",
 ];
 
+export const aboutMedia = {
+  type: "image",
+  src: "/images/IMG_4178-683x1024.webp",
+  poster: "/images/IMG_4178-683x1024.webp",
+};
+
 export const contactDetails = {
   email: "info@fotogracia.com",
   instagram: "https://instagram.com/fotogracia",

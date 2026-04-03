@@ -5,7 +5,7 @@ import { SectionIntro } from "@/components/ui/SectionIntro";
 export function PricingPreview() {
   return (
     <section id="pricing" className="px-5 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-white/10 bg-[#111111] p-8 sm:p-10">
+      <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-white/10 bg-[#111111]/90 p-8 shadow-glow backdrop-blur sm:p-10">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionIntro
             eyebrow="Pricing"
@@ -17,7 +17,7 @@ export function PricingPreview() {
             {serviceCategories.map((service) => (
               <div
                 key={service.slug}
-                className="flex flex-col gap-4 rounded-[1.8rem] border border-white/10 bg-white/[0.03] p-5 md:flex-row md:items-center md:justify-between"
+                className="flex flex-col gap-4 rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-5 md:flex-row md:items-center md:justify-between"
               >
                 <div>
                   <p className="text-xs uppercase tracking-[0.32em] text-sand">

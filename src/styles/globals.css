@@ -14,8 +14,9 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at top, rgba(223, 211, 195, 0.06), transparent 28%),
-    linear-gradient(180deg, #0d0d0d 0%, #080808 100%);
+    radial-gradient(circle at 12% 0%, rgba(203, 169, 107, 0.08), transparent 26%),
+    radial-gradient(circle at 88% 12%, rgba(223, 211, 195, 0.06), transparent 22%),
+    linear-gradient(180deg, #0d0d0d 0%, #090909 45%, #060606 100%);
   color: #ffffff;
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   text-rendering: optimizeLegibility;
@@ -47,4 +48,15 @@ img {
 ::selection {
   background: rgba(223, 211, 195, 0.25);
   color: #ffffff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 14%),
+    radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.18) 100%);
+  z-index: -1;
 }

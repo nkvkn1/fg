@@ -6,9 +6,10 @@ import { serviceCategories } from "@/data/siteContent";
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden px-5 pb-16 pt-12 sm:px-6 lg:px-8 lg:pb-20 lg:pt-16">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(203,169,107,0.08),transparent_28%)]" />
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div className="space-y-7">
-          <div className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.28em] text-sand">
+          <div className="inline-flex rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs uppercase tracking-[0.28em] text-sand backdrop-blur">
             Premium men&apos;s portrait photography
           </div>
           <div className="space-y-5">
@@ -43,7 +44,7 @@ export function HeroSection() {
             {serviceCategories.map((service) => (
               <div
                 key={service.slug}
-                className="rounded-[1.75rem] border border-white/10 bg-white/5 p-4"
+                className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-4 backdrop-blur"
               >
                 <p className="text-xs uppercase tracking-[0.26em] text-sand">
                   {service.navLabel}
@@ -62,7 +63,7 @@ export function HeroSection() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="relative"
         >
-          <div className="relative overflow-hidden rounded-[2.3rem] border border-white/10">
+          <div className="relative overflow-hidden rounded-[2.3rem] border border-white/10 bg-[#0f0f0f] shadow-glow">
             <Image
               src="https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-1-of-7-scaled.jpg"
               alt="Hero portrait for Fotogracia"

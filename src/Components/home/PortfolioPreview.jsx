@@ -17,7 +17,7 @@ export function PortfolioPreview() {
         <div className="grid gap-6 lg:grid-cols-3">
           {serviceCategories.map((service, index) => (
             <Reveal key={service.slug} delay={index * 0.08}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
+              <article className="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-[0_20px_60px_rgba(0,0,0,0.2)] backdrop-blur">
                 <div className="relative overflow-hidden">
                   <Image
                     src={service.image}

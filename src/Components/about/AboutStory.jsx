@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { aboutMedia } from "@/data/siteContent";
 
 export function AboutStory() {
+  const isVideo = aboutMedia.type === "video";
+
   return (
     <section className="px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.95fr] lg:items-center">
@@ -31,14 +34,26 @@ export function AboutStory() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden rounded-[2.4rem] border border-white/10">
-          <Image
-            src="/images/IMG_4178-683x1024.webp"
-            alt="Behind the scenes portrait for Fotogracia"
-            width={683}
-            height={1024}
-            className="h-[520px] w-full object-cover"
-          />
+        <div className="relative overflow-hidden rounded-[2.4rem] border border-white/10 bg-[#0f0f0f] shadow-glow">
+          {isVideo ? (
+            <video
+              className="h-[520px] w-full object-cover"
+              src={aboutMedia.src}
+              poster={aboutMedia.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          ) : (
+            <Image
+              src={aboutMedia.src}
+              alt="Behind the scenes portrait for Fotogracia"
+              width={683}
+              height={1024}
+              className="h-[520px] w-full object-cover"
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6">
             <div className="max-w-sm rounded-[1.6rem] border border-white/10 bg-black/35 p-5 backdrop-blur">
