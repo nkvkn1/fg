@@ -29,19 +29,31 @@ async function writeEntries(filePath, nextEntries) {
 }
 
 export async function saveContactInquiry(entry) {
-  const existing = await readEntries(CONTACT_FILE);
-  existing.push({
-    ...entry,
-    createdAt: new Date().toISOString(),
-  });
-  await writeEntries(CONTACT_FILE, existing);
+  try {
+    const existing = await readEntries(CONTACT_FILE);
+    existing.push({
+      ...entry,
+      createdAt: new Date().toISOString(),
+    });
+    await writeEntries(CONTACT_FILE, existing);
+    return { persisted: true };
+  } catch (error) {
+    console.error("Unable to persist contact inquiry:", error);
+    return { persisted: false };
+  }
 }
 
 export async function savePopupLead(entry) {
-  const existing = await readEntries(POPUP_FILE);
-  existing.push({
-    ...entry,
-    createdAt: new Date().toISOString(),
-  });
-  await writeEntries(POPUP_FILE, existing);
+  try {
+    const existing = await readEntries(POPUP_FILE);
+    existing.push({
+      ...entry,
+      createdAt: new Date().toISOString(),
+    });
+    await writeEntries(POPUP_FILE, existing);
+    return { persisted: true };
+  } catch (error) {
+    console.error("Unable to persist popup lead:", error);
+    return { persisted: false };
+  }
 }

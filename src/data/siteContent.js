@@ -19,7 +19,7 @@ export const serviceCategories = [
       "Up to 75 minutes, outfit guidance, natural posing direction, one location, full edited gallery, 5-day turnaround",
     cta: "Inquire About Lifestyle",
     badge: "Most versatile",
-    image: "https://fotogracia.com/wp-content/uploads/2026/03/Kaushiks-portrait-28-scaled.jpg",
+    image: "/images/IMG_4328-683x1024.webp",
   },
   {
     slug: "matrimony",
@@ -35,7 +35,7 @@ export const serviceCategories = [
       "Up to 75 minutes, wardrobe refinement, biodata-focused direction, full edited gallery, 5-day turnaround",
     cta: "Inquire About Matrimony",
     badge: "Profile-ready",
-    image: "https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-4-of-7-scaled.jpg",
+    image: "/images/IMG_4178-683x1024.webp",
   },
   {
     slug: "branding",
@@ -51,7 +51,7 @@ export const serviceCategories = [
       "Up to 90 minutes, planning call, location guidance, multiple looks, full edited gallery, 5-day turnaround",
     cta: "Inquire About Branding",
     badge: "Most booked",
-    image: "https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-1-of-7-scaled.jpg",
+    image: "/images/IMG_4296-1024x1536.webp",
   },
 ];
 
@@ -59,19 +59,19 @@ export const portfolioItems = [
   {
     title: "Quiet authority",
     category: "branding",
-    image: "https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-1-of-7-scaled.jpg",
+    image: "/images/IMG_4296-1024x1536.webp",
     alt: "Men's branding portrait in black turtleneck",
   },
   {
     title: "Profile-ready classic",
     category: "matrimony",
-    image: "https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-4-of-7-scaled.jpg",
+    image: "/images/IMG_4178-683x1024.webp",
     alt: "Men's portrait with clean professional styling",
   },
   {
     title: "City confidence",
     category: "lifestyle",
-    image: "https://fotogracia.com/wp-content/uploads/2026/03/Kaushiks-portrait-28-scaled.jpg",
+    image: "/images/IMG_4328-683x1024.webp",
     alt: "Men's lifestyle portrait outdoors",
   },
 ];

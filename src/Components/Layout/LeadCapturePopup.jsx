@@ -28,6 +28,7 @@ export function LeadCapturePopup() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setStatus("submitting");
+    setMessage("");
 
     try {
       const response = await fetch("/api/popup-lead", {
@@ -35,18 +36,21 @@ export function LeadCapturePopup() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
-      const payload = await response.json();
+      const contentType = response.headers.get("content-type") || "";
+      const payload = contentType.includes("application/json")
+        ? await response.json()
+        : { message: "Something went wrong. Please try again in a moment." };
 
       if (!response.ok) {
         throw new Error(payload.message || "Something went wrong.");
       }
 
       setStatus("success");
-      setMessage(payload.message.replace("&apos;", "'"));
+      setMessage(payload.message);
       window.sessionStorage.setItem("fotogracia-popup-dismissed", "true");
     } catch (error) {
       setStatus("error");
-      setMessage(error.message);
+      setMessage(error.message || "Something went wrong. Please try again.");
     }
   };
 

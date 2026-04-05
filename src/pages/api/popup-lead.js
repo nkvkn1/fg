@@ -15,6 +15,6 @@ export default async function handler(req, res) {
 
   return res.status(200).json({
     message:
-      "You&apos;re in. The 20% offer has been saved and Fotogracia will follow up at info@fotogracia.com.",
+      "You're in. Your 20% offer request is in and Fotogracia will follow up at info@fotogracia.com.",
   });
 }

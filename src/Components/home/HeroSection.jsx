@@ -65,7 +65,7 @@ export function HeroSection() {
         >
           <div className="relative overflow-hidden rounded-[2.3rem] border border-white/10 bg-[#0f0f0f] shadow-glow">
             <Image
-              src="https://fotogracia.com/wp-content/uploads/2026/03/Sanket-Portrait-1-of-7-scaled.jpg"
+              src="/images/IMG_4296-1024x1536.webp"
               alt="Hero portrait for Fotogracia"
               width={1024}
               height={1536}
